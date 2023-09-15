@@ -8,10 +8,30 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.scss'>
 </head>
 <body>
-    <p id="content">Hola Mundo</p>
-    <div id="div">Hola soy div</div>
-    <button onclick="cambiarTexto()">Pulsa</button>
+    <div>
+        <p id="content">Hola Mundo</p>
+        <div id="div">Hola soy div</div>
+        <button onclick="cambiarTexto()">Pulsa</button>
+    </div>
+    <div>
+        <button onclick="sumar()">Aumentar</button>
+        <input type="text" id="valor" value="1">
+    </div>
+    <!-- Ejemplo de Profe -->
+    <div>
+        <p id="p">0</p>
+        <button onclick="incrementar()">Pulse</button>
+        <script src='main.js'></script>
 
-    <script src='main.js'></script>
+        <p id="lista"></p>
+        <input id="entrada" type="text">
+        <button onclick="add()">Añadir</button>
+    </div>
+
+    <!-- Ejercicio -->
+    <div>
+        <input type="text" id="input-array">
+        <button onclick="agregar()">Agregar</button>
+    </div>
 </body>
 </html>
