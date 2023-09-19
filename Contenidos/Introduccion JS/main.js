@@ -43,17 +43,29 @@ for (let i = 0; i < array.length; i++) {
     console.log(array[i]);
 }
 
-// Ejercicio
+// Ejercicio añadir elementos
 
 let contenido = [];
 
 function agregar(){
     
     let value = document.getElementById("input-array").value;
+    let p = document.getElementById("parrafo");
     contenido.push(value);
 
-    for (let i = 0; i < contenido.length; i++) {
-        console.log(contenido[i]);
-    }
+    p.innerHTML = contenido;
+    console.log(contenido);
 
+}
+
+// Ejercicio eliminar elementos
+
+function eliminar(){
+    let cont = document.getElementById("input-array-eliminar").value;
+    let p = document.getElementById("text");
+
+    contenido.splice(cont, 1);
+    p.innerHTML = contenido;
+
+    console.log(contenido);
 }

@@ -5,7 +5,8 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Introduccion JS</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.scss'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
 </head>
 <body>
     <div>
@@ -21,8 +22,6 @@
     <div>
         <p id="p">0</p>
         <button onclick="incrementar()">Pulse</button>
-        <script src='main.js'></script>
-
         <p id="lista"></p>
         <input id="entrada" type="text">
         <button onclick="add()">Añadir</button>
@@ -30,8 +29,14 @@
 
     <!-- Ejercicio -->
     <div>
+        <p id="parrafo"></p>
         <input type="text" id="input-array">
         <button onclick="agregar()">Agregar</button>
+    </div>
+    <div>
+        <input type="text" id="input-array-eliminar">
+        <button onclick="eliminar()">Eliminar</button>
+        <p id="text"></p>
     </div>
 </body>
 </html>
