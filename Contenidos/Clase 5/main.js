@@ -30,6 +30,7 @@ function siguiente(){
 }
 
 function anterior(){
+
     let pNombre = document.getElementById("nombre");
     let pEdad = document.getElementById("edad");
     let pTrabajo = document.getElementById("trabajando");
@@ -40,8 +41,8 @@ function anterior(){
 
     indice--;
 
-    if (indice == -1) {
-        indice = personas.length;
+    if (indice < 0) {
+        indice = personas.length -1;
     }
-    
+
 }
