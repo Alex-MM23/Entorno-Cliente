@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>   
+</head>
+<body>
+    <select name="" id="seleccion" oninput="seleccionar()">
+        <option value="opc1">Gato</option>
+        <option value="opc2">Loro</option>
+        <option value="opc3">Perro</option>
+    </select>
+    <input type="range" min="200" max="1000" id="rango" oninput="cambiarTamaño()">
+    <input type="checkbox" id="check1" value="Blur" name="blur" onclick="checked1()">
+    <label for="">Blur</label>
+    <input type="checkbox" id="check2" value="Invert" name="invert" onclick="checked2()">
+    <label for="">Invert</label>
+    <input type="checkbox" id="check3" value="Grayscale" name="grayscale" onclick="checked3()">
+    <label for="">Gray scale</label>
+    <div><img src="gato.gif" alt="" id="imagen" width="200px"></div>
+
+    <script src='main.js'></script>
+</body>
+</html>
