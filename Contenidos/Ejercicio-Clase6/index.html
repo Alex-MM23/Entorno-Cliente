@@ -5,16 +5,41 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/main.css'>
 </head>
-<body>
-    <div class="panel">
-        <p id="id"></p>
-        <p id="name"></p>
-        <p id="description"></p>
-        <p id="img"></p>
-    </div>
-    <input type="range" min="20" max="800">
-    <script src='main.js'></script>
+<body onload="cargar()">
+    <header>
+        <h3 class="title-style title-tx">Mi Mundo en Línea</h3>
+    </header>
+    <nav>
+        <div class="">
+            <div class="item-flex">
+            <h4 class="subtitle-style">Precios</h4>
+            <label for="" class="subtitle-style">Busca por rango de precio</label>
+            <input type="range" name="" id="">
+            </div>
+            <div class="item-flex">
+                <h4 class="subtitle-style">Categorias</h4>
+                <div>
+                <input type="checkbox" name="" id="">
+                <label for="" class="text-style">Audio</label>
+            </div>
+            <div>
+                <input type="checkbox" name="" id="">
+                <label for="" class="text-style">Ordenadores</label>
+            </div>
+            <div>
+                <input type="checkbox" name="" id="">
+                <label for="" class="text-style">Otros</label>
+            </div>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="content-section" id="product"></div>
+    </section>
+    <footer></footer> 
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

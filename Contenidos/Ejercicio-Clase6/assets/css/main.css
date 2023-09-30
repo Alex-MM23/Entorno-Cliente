@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-columns: 20% 1fr; 
+    grid-template-areas: 
+    "zheader    zheader"
+    "znav       zsection"
+    "zfooter    zfooter";
+}
+
+header {
+    grid-area: zheader;
+    background-color: #3498db;
+}
+
+nav {
+    grid-area: znav;
+    background-color: #2980b9;
+}
+
+section {
+    grid-area: zsection;
+    background-color: #ffffff;
+}
+
+footer {
+    grid-area: zfooter;
+    background-color: #34495e;
+}
+
+/* Elementos tipo Class */
+
+.content-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5%;
+}
+
+.content-products {
+    width: calc(25% - 10px); 
+    margin: 15px; 
+    border: 1px solid #ccc;
+    padding: 10px; 
+    text-align: center; 
+    background-color: #f2f2f2;
+}
+
+.item-img {
+    width: 100%;
+}
+
+.item-desc {
+    font-size: 10px;
+    margin: 2% 0px;
+}
+
+.item-name {
+    font-size: 20px;
+    margin: 2% 0px;
+}
+
+.item-prec {
+    font-size: 15px;
+    margin: 2% 0px;
+}
+
+.item-button {
+    background-color: #3498db; 
+    color: #fff; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+}
+
+.item-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: center; 
+    text-align: left;
+    margin: 20% 8%;
+}
+
+.title-style{
+    color: #fff;
+    font-size: 35px;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.subtitle-style{
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: 15px;
+    color: #fff;
+}
+
+.text-style {
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+.black {
+    color: black !important;
+}
+
+.title-tx {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
