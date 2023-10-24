@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    cursor: default;
+}
+
+.header-content{
+    text-align: center;
+}
+
+.img-item{
+    position: relative;
+    top: 50px;
+    left: 50px;
+    right: 50px;
+    bottom: 50px;
+    cursor: pointer;
+}
+
+img{
+    height: 35%;
+}
