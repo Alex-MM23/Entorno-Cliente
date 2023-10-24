@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.content-cuadros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cuadrados {
+    padding: 75px;
+    margin: 40px 20px;
+    background-color: red;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.content-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-button > button {
+    margin: 10px 10px;
+    background-color: grey;
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+    border: 0px black solid;
+    cursor: pointer;
+}
