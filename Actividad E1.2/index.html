@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Actividad 1.2 A</title>
+    <link rel='stylesheet' type='text/css' href='index.css'>
+</head>
+<body>
+    <!--
+        EJERCICIO 1 (4 PUNTOS)
+        Cada botón tiene un contador asociado justo encima de él que empieza en 0.
+        - La primera vez que se presiona, incrementa en uno el contador. La siguiente vez, se incrementa en 2. La tercera en 3, etc.
+        - Con cada presión del botón, el texto del contador va cambiando negrita-normal-negrita-normal... (propiedad fontWeight en "bold" o "normal")
+        - Cuando el contador llegue a 15, el botón se bloquea y también se pone en rojo el fondo del contador.
+    -->
+    <div class="ejercicio">
+        <h1>Ejercicio 1</h1>
+        <div id="contadores">
+            <p id="contador1" class="contador">0</p>
+        </div>
+        <div id="botones">
+            <button class="botonContador" onclick="sumarContador()">CONTADOR ++</button>
+        </div>
+        <div id="reset">RESET</div>
+    </div>
+    <!--
+        EJERCICIO 2 (4 PUNTOS)
+        Hay un registro que pide al usuario rellenar los datos de nombre, edad e imagen de avatar (ruta dentro del equipo).
+        Tienes varias imágenes disponibles en la carpeta del examen para que hagas pruebas con ellas.
+        - Consigue que, si se presiona el botón "AGREGAR", se crea en el <div> "paneles" un panel con los datos previamente introducidos
+          y se borran todos los campos para que se pueda agregar otra persona después (2 PUNTOS).
+        - Consigue que, cuando se haya presionado "AGREGAR", se verifique que ningún campo está vacío antes de crear el panel. Si alguno
+          está vacío, saltará una alerta indicando que faltan campos por rellenar (2 PUNTOS).
+    -->
+    <div class="ejercicio">
+        <h1>Ejercicio 2</h1>
+        <div id="datos">
+            <label>Nombre: </label><input id="nombre" type="text">
+            <label>Edad: </label><input id="edad" type="number">
+            <label>Avatar: </label><input id="avatar" type="text">
+            <button onclick="usuarios()">AGREGAR</button>
+        </div>
+        <hr>
+        <div id="paneles">
+
+        </div>
+    </div>
+    <!--
+        EJERCICIO 3 (2 PUNTOS)
+        Consigue que salgan estrella-nube-estrella-nube... cada vez que se pulse el botón.
+        Sólo llegar hasta 15 como mucho.
+    -->
+    <div class="ejercicio">
+        <h1>Ejercicio 3</h1>
+        <button id="botonEstrella" onclick="NubesEstrella()">Pulsar</button>
+        <div id="imgs">
+            <!-- Aquí las imágenes -->
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src='index.js'></script>
+</body>
+</html>
